@@ -28,7 +28,7 @@ export default class Message extends Component {
         </View>
         <View style='author'>
           <View style='author__photo'>
-            <Image source={author.portrait} />
+            <Image style={{width: 150, height: 150, borderRadius: 75}} source={author.portrait} />
           </View>
           <View style='author__label'>
             <Text style='author__name'>{author.name}</Text>
