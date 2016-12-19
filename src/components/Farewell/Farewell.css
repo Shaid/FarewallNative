@@ -1,0 +1,17 @@
+.Farewell {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.Message {
+  flex: 1 1 80%;
+}
+
+.Footer {
+  flex: 1 1 10vh;
+  margin-top: auto;
+  padding: 20px;
+  font-size: 4rem;
+  cursor: pointer;
+}
