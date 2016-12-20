@@ -24,7 +24,8 @@ export default class Message extends Component {
       <View style={'container message ' + sample(fonts)}>
         <View style='message__content'>
           <Text>{salutation} {subject},</Text>
-          <Text>{message.start} {message.middle} {message.end}</Text>
+          <Text>{message.start} {message.middle}</Text>
+          <Text>{message.end}</Text>
         </View>
         <View style='author'>
           <View style='author__photo'>
