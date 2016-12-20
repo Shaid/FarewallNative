@@ -18,7 +18,7 @@ const initialState = {
   }
 };
 
-import strings from '../../data/strings.json';
+import strings from '../../assets/strings.json';
 
 function generateMessage() {
   const middle = () => {
@@ -42,7 +42,12 @@ function generateMessage() {
 
 function getRandomPortrait(name) {
   const gender = (detect(name) === "female") ? "female" : "male";
-  const num =  Math.floor(Math.random() * (100 - 1) + 1);
+
+  // magic numbers!
+  const numFemale = 132;
+  const numMale = 116;
+
+  const num =  Math.floor(Math.random() * (gender === "female" ? numFemale : numMale - 1));
   return portraits[gender][num];
 }
 
